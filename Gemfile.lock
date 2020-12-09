@@ -1,0 +1,93 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ast (2.4.1)
+    binding_of_caller (0.8.0)
+      debug_inspector (>= 0.0.1)
+    bond (0.5.1)
+    byebug (11.1.3)
+    chef-utils (16.7.61)
+    coderay (1.1.3)
+    debug_inspector (0.0.3)
+    interception (0.5)
+    kandr-pry-plus (1.1.0)
+      bond
+      pry-byebug
+      pry-doc
+      pry-docmore
+      pry-rescue
+      pry-stack_explorer
+    kramdown (2.3.0)
+      rexml
+    kramdown-parser-gfm (1.1.0)
+      kramdown (~> 2.0)
+    mdl (0.11.0)
+      kramdown (~> 2.3)
+      kramdown-parser-gfm (~> 1.1)
+      mixlib-cli (~> 2.1, >= 2.1.1)
+      mixlib-config (>= 2.2.1, < 4)
+      mixlib-shellout
+    method_source (1.0.0)
+    mixlib-cli (2.1.8)
+    mixlib-config (3.0.9)
+      tomlrb
+    mixlib-shellout (3.2.2)
+      chef-utils
+    parallel (1.20.1)
+    parser (2.7.2.0)
+      ast (~> 2.4.1)
+    pry (0.13.1)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
+    pry-byebug (3.9.0)
+      byebug (~> 11.0)
+      pry (~> 0.13.0)
+    pry-doc (1.1.0)
+      pry (~> 0.11)
+      yard (~> 0.9.11)
+    pry-docmore (0.1.1)
+      pry
+      pry-doc
+    pry-rails (0.3.9)
+      pry (>= 0.10.4)
+    pry-rescue (1.5.2)
+      interception (>= 0.5)
+      pry (>= 0.12.0)
+    pry-stack_explorer (0.5.1)
+      binding_of_caller (~> 0.7)
+      pry (~> 0.13)
+    rainbow (3.0.0)
+    regexp_parser (2.0.0)
+    rexml (3.2.4)
+    rubocop (1.6.0)
+      parallel (~> 1.10)
+      parser (>= 2.7.1.5)
+      rainbow (>= 2.2.2, < 4.0)
+      regexp_parser (>= 1.8, < 3.0)
+      rexml
+      rubocop-ast (>= 1.2.0, < 2.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 1.4.0, < 2.0)
+    rubocop-ast (1.3.0)
+      parser (>= 2.7.1.5)
+    rubocop-performance (1.9.1)
+      rubocop (>= 0.90.0, < 2.0)
+      rubocop-ast (>= 0.4.0)
+    ruby-progressbar (1.10.1)
+    tomlrb (2.0.0)
+    unicode-display_width (1.7.0)
+    yard (0.9.25)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  kandr-pry-plus
+  mdl
+  pry
+  pry-rails
+  rubocop (>= 1.0)
+  rubocop-performance (>= 1.0)
+
+BUNDLED WITH
+   2.1.4

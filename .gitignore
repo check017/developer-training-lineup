@@ -1,0 +1,33 @@
+
+# Build artifacts
+*.gem
+*.rbc
+
+# Bundler artifacts
+.bundle
+Gemfile.lock
+
+# Development artifacts
+node_modules
+yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+.byebug_history
+rdoc
+pkg
+.rspec
+.config
+.env
+
+# OS artifacts
+.DS_Store
+
+# IDE/Editor artifacts
+*.code-workspace
+*.tmproj
+tmtags
+*~
+\#*
+.\#*
+*.swp
+
