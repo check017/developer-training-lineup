@@ -1,1 +1,2 @@
 # Level-0
+In this level the student will become familiar with the basic objects used by the developer to accomplish his tasks. Included will be definitions of objects, a brief description of their use, and practical application drills. 

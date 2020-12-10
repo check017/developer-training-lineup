@@ -1,7 +1,7 @@
 # Developer Training Lineup
 
 This page provides information about how to study the material in this
-series of courses. It includes some helful tips regarding how to study.
+series of courses. It includes some helful tips regarding how to study these courses for maximum retention and ease of use.
 
 ## Beginning At The Beginning
 
@@ -10,8 +10,28 @@ that "anyone can do it!". Just amongst us girls, that's not entirely true.
 It's not as easy as the boys on YouTube seem to make it out to be.
 In fact, their constant assertion that it's "soooo easy" is not only just a bit deceptive,
 it's also a denigration of all the hard work put in by the successful developers working in the business today.
-So, what does it really take to be successful in this industry?
-This series of courses endeavours to answer that question.
+There is quite a lot to know in order to be successful as a software developer.
+This course endeavors to teach the new developer all of the basic tools needed to work on develpoment projects successfully.
+
+Some of these skills include:
+
+* An understanding of computer hardware.
+* How to set-up your work space on the computer.
+* The ability to navigate and utilize various software tools.
+* Knowledge of the file storage system of the computer.
+* Understanding how different programs communicate with each other.
+* What is the internet?
+* Servers and how to use them.
+* Security of your software.
+* Dependencies - What they are and why you need them.
+* What is a library?
+* What is a framework?
+* What is an Intergrated Development Environment (IDE) 
+* How does all this stuff fit together?
+
+The above list is certainly not all there is to know, but it is a good place to start.
+
+
 
 ### A Different Approach
 
