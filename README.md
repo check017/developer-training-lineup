@@ -26,12 +26,10 @@ Some of these skills include:
 * Dependencies - What they are and why you need them.
 * What is a library?
 * What is a framework?
-* What is an Intergrated Development Environment (IDE) 
+* What is an Intergrated Development Environment (IDE)
 * How does all this stuff fit together?
 
 The above list is certainly not all there is to know, but it is a good place to start.
-
-
 
 ### A Different Approach
 
