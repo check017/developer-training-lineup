@@ -100,3 +100,16 @@ The mouse is a common feature on most computers today. This was not always the c
 
 DRILL: Open a text file or webpage. Use the mouse, testing out each function. When you feel comfortable using the drill is complete.
 
+## The Browser
+
+A browser is a piece of software on your computer. It allows you to make requests for information from the World Wide Web. When that information is returned to the browser it will assemble the information into the format specified by instructions from the webpage itself. We will cover the parts of the browser and how to use it to view web pages on the internet.
+
+### Uniform Resource Locator
+
+* Every web page on the internet has a specific location where it can be found.
+* This location, or "address", is called a Uniform Resource Locator, or URL. It tells the browser where to look for a particular web page.
+* The browser is often confused with a search engine. These are actually different things.  A search engine is a website that lists the locations of other websites. Once you find what you are looking for, you still have to tell your browser use the URL to request the data. This is a little deceptive because in order to "use the URL to locate the data" is really just clicking on the listing in the search engine. Even though it is deceptively simple, it is important to understand that the simple click on a search engine listing is, actually, a request from the browser for information located at a specific address (URL).
+* If you know the URL of the resource you wish to view, you can skip the search engine altogether. All you need to do is enter the URL in the window at the very top of browser window. The information will be requested, returned, and assembled for you just as if you had clicked on a search result. And it's faster using the search engine.
+* Search engine pages are often displayed as the first thing you see when you open your browser. This is partially the reason why there has been some confusion between the two.
+* 
+
