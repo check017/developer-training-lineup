@@ -181,3 +181,35 @@ An IDE is a set of tools all grouped in one application used by the developer to
 A virtual machine is a computer that is created by your computer. It behaves exactly as though it were a completely separate computer running on its own. It is not connected in anyway to your computer. It does not have access to any of your files or applications (unless you let it). Think of a virtual machine as a computer created by your computer that functions as a separate machine. The virtual machine *does* depend on your computer's CPU and it borrows some memory from it. This makes sense because memory and the CPU are hardware that a computer cannot function without. Other than that, a virtual machine is a totally separate machine running on your machine.
 
 These are used when you want to isolate applications from outside access. They are also used for security purposes and when you want to run a different operating system but don't want to get rid of the operating system you are already using. You can just install the different OS on the virtual machine. The downside of virtual mchines is that they do use CPU and memory resources from your actual machine. As a result of this, you may experience some slow down of your computer when running one or more virtual machines.
+
+### GIT
+
+GIT is a tool used by developers to keep a record of changes made to code files. As you go about the business of writing code, you will find yourself making changes all the time. You could just save a file containing the version of the code you wrote. Then you could arrange the versions you saved in its own directory, then you could go look for that particular file that contains the version you want to look at. If, by some chance, you forgot what version you needed, you could just go through the directory and look at every file you have.
+
+Or you could just use GIT. GIT is a version control tool. It will keep track of every change in every file you work with. It can also keep a log of what changes you made and when you made them. You can go back to any version of any file you need easily. There are *a lot* of things you can do with GIT to keep track of the development of your project. In this section we will get you started with using GIT and GitHub.
+
+### GIT and GitHub are Not the Same Thing
+
+Git and GitHub are not the same tools. Git is for tracking changes made in your files. These files can be anything you want, they don't have to be code files. Once you apply Git to your project, it will keep track of changes made to your files as you make them.
+
+GitHub is a website that allows developers to share their code with each other. Developers can make changes in different files and share those changes with others through GitHub. You can use Git without using GitHub. But if you want to collaborate with others on a project, you'll want to use GitHub. You can use GitHub through their GUI on the website or you can use Git and GitHub the command line in the terminal. We will be using the command line.
+Before we get started, let's define some terms.
+
+* Repository - A central location in which data is stored and managed
+* Clone - And exact copy of a repository stored on your machine. When you clone a repository two identical copies of the repo exist, one on your machine and one stored in a GitHub account (online).
+* Fork - When you make an exact copy of a repository from another GitHub account into your own account, you have created a fork. This is the same as a clone. The difference is clones are copies made on your machine from a GitHub account. Forks are copies made from one account to another account. This is a common action to do on GitHub. It allows developers to share files for a wide variety of different projects. Often, developers will invite other developers to work on their code.
+* Remote - This is the repository stored in the GitHub account.
+* Local - This is the copy of the repo stored on your machine.
+* Head - This is the latest version of a file saved to the repository.
+* Origin - This is the word used to refer to the repository from which your clone was made.
+
+How does this all work? Think of Git as a time line. Changes you make are saved and placed on this time line. As you move forward, every change you save is recorded on this line. The last (most recent) saved change you made is the *head* of the timeline. The next change you make will be compared to HEAD then added as the new HEAD. This continues until there are no more changes you wish to make.
+
+How do I collaborate with other developers?
+Different developers can work together on the same code by using a GitHub feature called "branching". Instead of just moving forward with new versions always becoming HEAD, you can divert off the main timeline and create a parallel timeline. This is a "branch". Here you can work on your code without affecting the work already done on the main timeline. This main timeline is called the "master" branch. When you are finished with your changes, you can merge your branch back into the master branch. GitHub will automatically sort everything on both branches to make it all align.
+
+Let's get you working with Git and GitHub.
+
+1. Go to the GitHub website. Create an account for yourself.(GitHub will walk you through it)
+2. 
+
