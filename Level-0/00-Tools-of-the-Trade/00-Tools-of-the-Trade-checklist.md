@@ -210,6 +210,31 @@ Different developers can work together on the same code by using a GitHub featur
 
 Let's get you working with Git and GitHub.
 
-1. Go to the GitHub website. Create an account for yourself.(GitHub will walk you through it)
-2. 
+* Navigate over to the GitHub website. Create an account for yourself. (We will need that later)
+* Open a terminal window on your machine (CTRL+ALT+t)
+* Navigate to your Projects directory. (If you don't have a Projects directory, make one with ```mkdir Projects```).
+* Type ```git init```. This command creates a git repository.
+* Type ```git status```. This will show you the current state of your repo. It will show you what files are tracked (or not tracked), what files have been changed, and what has been staged. What does all that mean, exactly? Let's go over that now:
 
+  * There are three steps to saving a file to your repo.
+  
+  * First, you make changes in a file or in several files. Git tracks every file you have changed.
+  * If you satisfied with the changes you have made, you add the files to the staging area with the command ```git add + the filename of the file you want to add```.
+  * To permanently save your files to your repo type ```git commit -m + "A short description of the work done"```. Use double quotes for the message part.
+  * Once you committed your file, that's the end of the cycle. You can always make additional changes later and then add, stage, and commit them as well. In fact, it is expected that you do.
+
+The above is the basic set of steps used to create a repository, add files to the staging area, and commit (permanently save) them to your repo.
+
+### Getting to the Repository
+
+In the previous section we went over how to create a repository on your machine, and then making changes and saving them. This is fine for tracking your own files, but how do you get into a repository that is being used by other developers? This is when you will need to clone the repo.
+
+When you clone a repo you are making a complete copy of the repository stored on your machine. Any changes you make in the cloned repository exist only in the clone. They do not change anything in the repository you made a clone from. Let's look at how to clone a repository onto your machine.
+
+* Open a terminal window and navigate to the directory you want to store your clone in.
+* Type ```git clone https://github.com/name-of-the-repository/name-of-the-repository```. This creates a copy of the repository on your machine.
+* The repository lives in the directory you were in when you cloned it.
+
+### Tranferring Your Data
+
+A repository is a central location where all of the files and directories for a project are stored. When you clone a repository, GitHub is aware that a clone has been made. It will allow you to send and receive data to the central (Called the "remote" )
