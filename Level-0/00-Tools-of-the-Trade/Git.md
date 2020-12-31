@@ -66,12 +66,13 @@ move forward, every change you save is recorded on this line. The last (most rec
 of the timeline. The next change you make will be compared to HEAD then added as the new HEAD. This continues until
 there are no more changes you wish to make.
 
-How do I collaborate with other developers? Different developers can work together on the same code by using a GitHub
-feature called "branching". Instead of just moving forward with new versions always becoming HEAD, you can divert off
-the main timeline and create a parallel timeline. This is a "branch". Here you can work on your code without affecting
-the work already done on the main timeline. This main timeline is called the "master" branch. When you are finished with
-your changes, you can merge your branch back into the master branch. GitHub will automatically sort everything on both
-branches to make it all align.
+How do I collaborate with other developers? It is possible to collaborate directly with another developer using only Git.
+This is known as a peer-to-peer arrangement. You and someone else are connected directly to each others' machines.
+You grant access to your machine and your friend grants you access to his/her computer. In order to work on your project you
+must be connected online. With GitHub, a developer can clone a repository, work on their files, and then send those files
+back to the main (remote) repository. An internet connection is not required. When the developer is ready to send his work to
+origin, he can connect to GitHub, push his code, and then disconnect. GitHub also provides several features that allow
+collaborators to effectively work together on a project.
 
 Let's get you working with Git and GitHub.
 
@@ -122,6 +123,40 @@ Let's look at how to clone a repository onto your machine.
 
 ## Tranferring Your Data
 
-A repository is a central location where all of the files and directories for a project are stored. When you clone a
-repository, GitHub is aware that a clone has been made. It will allow you to send and receive data to the central
-server (called a "remote" ).
+Git allows developers to share their data with each other. Usually, a single member of a team will clone the repo, then
+create a *branch*. A branch is an alternate timeline running parallel to the main timeline. The main timeline is called
+*master*. Actually, master is a branch itself, but it is more useful to think of it as the trunk of a tree. Other branches
+divert off master and move forward in time parallel to master. The value of a branch is that the changes you make have no
+effect on the code tracked on the master branch. You can break things, experiment, and generally just play around with your
+code without fear of breaking anything important. The branching feature is used more than just experimenting. A new feature being
+added to an application would be developed on its own branch. In this way, a new feature can be worked on and tested before
+being added to the main body of the code. Branching also allows for several different developers to all work on the same code
+independantly. We will cover the basic actions of sending and receiving data using GitHub. Let's cover some terms to begin with.
+
+* `push`
+    - This is the action of sending your committed files to the remote repository.
+
+* `pull`
+    - This is the action of retrieving data from remote repository.
+
+* `fetch`
+    - This is the action of checking a remote repo to see if there have been any changes.  No files are transferred when fetching.
+
+* `diff`
+    - This command will show the changes made before and after you have made changes. It will also show any changes that have
+  been made in the remote compared to your local repo
+
+Keep in mind there are a lot of things Git allows you to do. But, just to get started, we will cover the basic procedure for
+working with files, saving your changes and then pushing those changes to the repo. Let's walk through it as if you were
+starting your day.
+
+First thing is to fire up your machine. Once booted up, open a terminal window and navigate to your git repository.
+
+We need to check to see if there have been any changes made since the last time you pulled from the repo. Type `git fetch`.
+Then `git diff ...origin`.
+
+If you see that there have been changes made, you need to pull those changes into your local repo. This is done by the command
+ `git pull origin branch`. Origin is the remote repo. Branch is the name of the branch you are pulling from. You can pull from
+ any branch in the repo. Often you will be pulling changes from a branch other than master. Once you have pulled in any
+ changes, you will then have a complete copy of everything that has been done in the repo since the last time you pulled.
+ You should be, at this point, ready to begin working on your files.
