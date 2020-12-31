@@ -17,9 +17,9 @@ meant to be simple. Do the drills.
 
 ## Checklist
 
-[ ] [The Computer](./The-Computer.md)
-[ ] [The Browser](./The-Browser.md)
-[ ] [Servers](./Servers.md)
-[ ] [Code-Editors](./Code-Editors.md)
-[ ] [Git](./Git.md)
-[ ] [Frameworks](./Frameworks.md)
+* [ ] [The Computer](./The-Computer.md)
+* [ ] [The Browser](./The-Browser.md)
+* [ ] [Servers](./Servers.md)
+* [ ] [Code-Editors](./Code-Editors.md)
+* [ ] [Git](./Git.md)
+* [ ] [Frameworks](./Frameworks.md)
