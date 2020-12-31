@@ -47,7 +47,7 @@
   },
   "scripts": {
     "lint-rb": "bundle exec rubocop .",
-    "lint-md": "bundle exec mdl --ignore node_modules . ",
+    "lint-md": "bundle exec mdl --git-recurse node_modules .",
     "lint-yaml": "yamllint ./**/*.{yml,yaml}",
     "lint": "yarn run lint-rb && yarn run lint-md && yarn run lint-yaml && editorconfig-checker"
   }

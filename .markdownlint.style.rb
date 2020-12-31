@@ -126,7 +126,7 @@ rule 'MD025'
 
 # MD026 - Trailing punctuation in header
 # Default: No trailling punctuation in headers
-rule 'MD026'
+rule 'MD026', punctuation: '.,;:'
 
 # MD027 - Multiple spaces after blockquote symbol
 # Default: Only a single spaces after blockquote symbol
