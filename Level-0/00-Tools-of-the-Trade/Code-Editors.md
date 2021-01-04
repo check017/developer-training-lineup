@@ -21,7 +21,7 @@ Working with just a blank file has its disadvantages. You have to write everythi
 to keep track that everything written in the file is written correctly. You are responsible to ensure your code is
 formatted so that it can be clearly read. You get no help from the computer to ensure your file is being written
 correctly or that it is formatted clearly. Sometimes your code must be repetitive or you find the same block of code
-must be reproduced elsewhere in your file. This can be tedious and waste time better spent on actualy development. In
+must be reproduced elsewhere in your file. This can be tedious and waste time better spent on actually development. In
 order to solve some of these problems, developers over the years have created programs that allow you to write your
 code, help you format it correctly, point out any errors, and keep your files organized. All this is done by the program
 so you don't have to do it yourself. The simplest of these are called text-editors.
@@ -74,10 +74,21 @@ majority of developers use it in one form or another. The colors used for variou
 everyone else's code as well. Therefore, it is advised that you don't change the colors from the ones already used by
 the text highlighter.
 
+### What is the Difference Between a Text Editor and a Code Editor?
+
+A text editor allows you to edit any text. The file you are working with does not have to be a code file. It can be anything
+with text. A code editor is optimized for writing computer code. It has features specifically for writing just code. It can
+determine what coding language you are using,
+it provides text color to help you see what parts are what in your code, and it manages the files and
+directories of you project. It can also spot errors in your code right away. All of this speeds your development time.
+Code editors do a lot more than what has been described here. They have a whole host of features.
+As you become more familiar with using a code editor you may find you like things set a certain way or that you prefer a
+certain feature more than another. A good code editor can handle any set-up you may prefer.
+
 ## Intergrated Development Environment (IDE)
 
 An IDE is a set of tools all grouped in one application used by the developer to handle every aspect of software
 development. Everything from file management to error handling to security is handled within an IDE. This is very
-different from a text editor. Your text editor is really just that, an editor for writing and editing text. Many text
+different from a code editor. Your text editor is really just that, an editor for writing and editing text. Many text
 editors have similar features to an IDE, but not anywhere near to the extent of an IDE. IDE's are not usually needed for
 web development work. For now, we will just use the Sublime Text Editor.

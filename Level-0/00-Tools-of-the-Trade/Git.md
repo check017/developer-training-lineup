@@ -198,12 +198,12 @@ Let's go over the basic procedure for this now.
 * Navigate to your working directory.
 
 * Type `git status`. This will show you what files have been changed.
-The changed files are rendered in red.
+  The changed files are rendered in red.
 
 * Type `git add` with the name of the file you wan tto add to the staging area.
 
 * Type `git status` again. You should see the files you added now rendered in green. These
-are now in the staging area.
+  are now in the staging area.
 
 * Type `git commit -m [A short description of what was done]`
 
@@ -211,3 +211,11 @@ are now in the staging area.
 
 One of the actions that cannot be done from the command line is the `pull request`. The `pull request` cannot be done from
 the command line. It must be executed at the GitHub website.
+
+* Go to your account in GitHub.
+
+* Select the repo you wich to make to pull request to.
+
+* Create your pull request.
+
+That is all there is to it.
