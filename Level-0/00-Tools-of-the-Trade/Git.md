@@ -29,7 +29,6 @@ files as you make them. The terms `Git` and `Github` are often used interchangab
 `Git` is a version control tool. `GitHub` uses `Git` to make collaborating with other people possible. It is, perhaps,
 unfortunate that the name `GitHub` was chosen for the website.
 It can be very confusing.
-
 You can use Git without using GitHub. But if you want to collaborate with others on a project, you'll want to use
 GitHub. You can use GitHub through their GUI on the website or you can use Git and GitHub from the command line in the
 terminal. We will discuss more about GitHub in future modules. For now, let's get comfortable using just Git.
@@ -48,27 +47,32 @@ Before we get started, let's define some terms.
 * `Head`
     - This is the latest version of a file saved to the repository.
 
-* Open a terminal window on your machine (CTRL+ALT+t)
+## Procedure
+
+* Open a terminal window on your machine (CTRL+ALT+t
 
 * Navigate to your Projects directory. (If you don't have a Projects directory, make one with `mkdir Projects`).
 
 * Type `git init`. This command creates a git repository.
 
-* Type `git status`. This will show you the current state of your repo. It will show you what files are tracked (or
-not tracked), what files have been changed, and what has been staged. What does all that mean, exactly? Let's go over
-that now:
+* Type `git status`. This will show you the current state of your repo.
 
-    - There are three steps to saving a file to your repo.
+`git status` will show you what files are tracked(or not tracked), what files have been changed,
+and what has been staged.
 
-    - First, you make changes in a file or in several files. Git tracks every file you have changed.
+## Steps to Get Started
 
-    - If you satisfied with the changes you have made, you add the files to the staging area with the command
+* There are three steps to saving a file to your repo.
+
+* First, you make changes in a file or in several files. Git tracks every file you have changed.
+
+* If you satisfied with the changes you have made, you add the files to the staging area with the command
     `git add [the filename of the file you want to add]`.
 
-    - To permanently save your files to your repo type `git commit -m "A short summary of the work done"`. Use quotes for
+* To permanently save your files to your repo type `git commit -m "A short summary of the work done"`. Use quotes for
     the message part.
 
-    - Once you committed your file, that's the end of the cycle. You can always make additional changes later and then add,
+* Once you committed your file, that's the end of the cycle. You can always make additional changes later and then add,
     stage, and commit them as well. In fact, it is expected that you do.
 
 The above is the basic set of steps used to create a repository, add files to the staging area, and commit (permanently

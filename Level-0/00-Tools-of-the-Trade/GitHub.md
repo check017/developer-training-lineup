@@ -1,8 +1,10 @@
 # GitHub
 
-`Clone`
+## Terms
+
+* `Clone`
     - And exact copy of a repository stored on your machine. When you clone a repository two identical copies of the
-      repo exist, one on your machine and one stored in a GitHub account (online).
+    repo exist, one on your machine and one stored in a GitHub account (online).
 
 * `Fork`
     - When you make an exact copy of a repository from another GitHub account into your own account, you have created
