@@ -33,7 +33,7 @@ With GitHub, a developer can clone a repository, work on their files, and then s
 back to the main (remote) repository.
 An internet connection is not required. When the developer is ready to send his work to
 origin, he can connect to GitHub, push his code, and then disconnect.
-GitHub also provides several features that allow
+GitHub also provides several other features that allow
 collaborators to effectively work together on a project.
 
 Let's get you working with Git and GitHub.
@@ -63,7 +63,7 @@ create a *branch*. A branch is an alternate timeline running parallel to the mai
 divert off master and move forward in time parallel to master. The value of a branch is that the changes you make have no
 effect on the code tracked on the master branch. You can break things, experiment, and generally just play around with your
 code without fear of breaking anything important.
-The branching feature is used more than just experimenting.
+The branching feature is used for more than just experimenting.
 A new feature being
 added to an application would be developed on its own branch.
 In this way, a new feature can be worked on and tested before
@@ -76,8 +76,13 @@ Let's cover some terms to begin with.
     - This is the action of sending your committed files to the remote repository.
 
 * `pull`
-    - This is the action of retrieving data from remote repository.
+    - This is the action of retrieving data from remote repository. Any changes present in the remote will be merged
+    with your local repo.
 
+* `fetch`
+    - This command will check for any changes made to the remote (main) repository, but it does not tranfer any files or
+    make any changes.
+  
 * `diff`
     - This command will show the changes made before and after you have made changes.
   It will also show any changes that have
@@ -127,7 +132,8 @@ Let's go over the basic procedure for this now.
 
 * Type `git commit -m [A short description of what was done]`
 
-* Git will send the changes to the remote. And your done.
+* Once you have saved your files, you need to send them to `remote`.
+  To do this you give the command `git push [name of remote] [name of branch]`
 
 One of the actions that cannot be done from the command line is the `pull request`. The `pull request` cannot be done from
 the command line. It must be executed at the GitHub website.

@@ -38,7 +38,8 @@ that, a virtual machine is a totally separate machine running on your machine.
 
 These are used when you want to isolate applications from outside access. They are also used for security purposes and
 when you want to run a different operating system but don't want to get rid of the operating system you are already
-using. You can just install the different OS on the virtual machine. The downside of virtual mchines is that they do use
+using. You can just install the different OS on the virtual machine. Often, virtual machines are used to run server software.
+Several server software applications can be run from a single machine.
+The downside of virtual machines is that they do use
 CPU and memory resources from your actual machine. As a result of this, you may experience some slow down of your
 computer when running one or more virtual machines.
-
