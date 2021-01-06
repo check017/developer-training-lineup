@@ -82,7 +82,7 @@ Let's cover some terms to begin with.
 * `fetch`
     - This command will check for any changes made to the remote (main) repository, but it does not tranfer any files or
     make any changes.
-  
+
 * `diff`
     - This command will show the changes made before and after you have made changes.
   It will also show any changes that have
