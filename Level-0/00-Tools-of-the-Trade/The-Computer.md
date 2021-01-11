@@ -200,4 +200,3 @@ the mouse.
 ### DRILL: Open a text file or webpage
 
 Use the mouse, testing out each function. When you feel comfortable using the drill is complete.
-
