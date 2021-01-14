@@ -79,8 +79,21 @@ There are situations wherein we do not know how many times we need the code to e
 So, instead of giving a finite number we supply a condition.
 A while loop says, "keep doing this until the condition of something is___".
 What is the condition? It could be the value of a variable. It could be when an expression evaluates to true or false.
+Note that condition should eventually change until it evaluates to condition you set. In other words,
+if you stated that the loop should continue until var a = 10 then you have to account for how var a is going to eventually
+get to 10. Otherwise, your loop will continue forever.
 
-#### Common Uses of For Loops
+### Do While Loop
+
+This loop is pretty similar to the While loop with one exception. The Do While loop will execute at least one loop.
+It may not do a second or third loop, but it will do at least one. The condition is checked at the end of the loop,
+not before (like in While or For loops). This means the code *must* run at least once. These are not seen very often.
+They are used sometimes for displaying menus.
+The loop displays the menu until a selection is made.
+Selecting an item from the menu renders the test condition `false`,
+and the loop is exited.
+
+### Common Uses of For Loops
 
 For Loops are the most common type of loop you will encounter in your code. They are used to search for data, to sort data,
 and to check for the presence of data.
@@ -91,4 +104,13 @@ It has a specific quality that makes it unique.
 That could be an index number, or a name, or a specific value.
 This is the thing you are looking for. A For Loop is just the
 thing to search through the array to locate the piece of data you need. How would that look, exactly?
-Let's break it down into plain old English. Using our example above, let's say you need
+Let's break it down into plain old English. Using our example above, let's say you need to find a specific test score.
+We can find it by using its specific value. Or we can find it in a range of values.
+If we were looking for, say, scores above 60 we could have our loop compare each index to see if it was less then 60.
+If the index value was less than 60 then we ignore it.
+If the index value is 60 or greater we could print that out or increment a variable.
+One will give each score above 60, the other will tell us how many scores are above 60.
+The important thing to take away from all of this is to ask yourself, "What am I trying to do here?"
+If you can answer that, you can figure out the code to do it.
+In the above example, we would use a For Loop. Inside of that For Loop we would have an IF/Else statement.
+This is how you would search and select.

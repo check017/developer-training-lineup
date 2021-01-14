@@ -1,5 +1,14 @@
 # GitHub
 
+GitHub is a website that allows developers to share code files. It allows you to pull in the repos of other developers,
+make changes, and send the files back. It also allows you to do the same.GitHub uses Git version control software to
+achieve this. However, GitHub is not Git.
+It just uses Git to make it easy for developers to share their code.
+It is recommended that you become comfortable using Git before you dive into GitHub.
+In order to discuss GitHub intelligently,
+it is first necessary to define a few words that are
+used on the platform.
+
 ## Terms
 
 * `Clone`
@@ -8,35 +17,16 @@
 
 * `Fork`
     - When you make an exact copy of a repository from another GitHub account into your own account, you have created
-      a fork. This is the same as a clone. The difference is clones are copies made on your machine from a GitHub
-      account. Forks are copies made from one account to another account. This is a common action to do on GitHub. It
-      allows developers to share files for a wide variety of different projects. Often, developers will invite other
-      developers to work on their code.
+    a fork. This is the same as a clone. The difference is clones are copies made on your machine from a GitHub
+    account. Forks are copies made from one account to another account. This is a common action to do on GitHub. It
+    allows developers to share files for a wide variety of different projects. Often, developers will invite other
+    developers to work on their code.
 
 * `Remote`
     - This is the repository stored in the GitHub account.
 
 * `Local`
     - This is the copy of the repo stored on your machine.
-
-How does this all work? Think of Git as a time line. Changes you make are saved and placed on this time line. As you
-move forward, every change you save is recorded on this line. The last (most recent) saved change you made is the *head*
-of the timeline. The next change you make will be compared to HEAD then added as the new HEAD. This continues until
-there are no more changes you wish to make.
-
-How do I collaborate with other developers? It is possible to collaborate directly with another developer using only Git.
-This is known as a peer-to-peer arrangement. You and someone else are connected directly to each others' machines.
-You grant access to your machine and your friend grants you access to his/her computer.
-In order to work on your project you
-must be connected online.
-With GitHub, a developer can clone a repository, work on their files, and then send those files
-back to the main (remote) repository.
-An internet connection is not required. When the developer is ready to send his work to
-origin, he can connect to GitHub, push his code, and then disconnect.
-GitHub also provides several other features that allow
-collaborators to effectively work together on a project.
-
-Let's get you working with Git and GitHub.
 
 ## Getting to the Repository
 
@@ -88,7 +78,7 @@ Let's cover some terms to begin with.
   It will also show any changes that have
   been made in the remote compared to your local repo
 
-* `pull request`
+* `pull request` move this
     - This a request made to the person in charge of the repo. You are asking that your changes be approved, and if
     acceptable, that they be merged into the master branch.
 

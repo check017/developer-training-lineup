@@ -66,7 +66,7 @@ and what has been staged.
 
 * First, you make changes in a file or in several files. Git tracks every file you have changed.
 
-* If you satisfied with the changes you have made, you add the files to the staging area with the command
+* If you satisfied with the changes you have made, you add the files to the staging area with the `add` command
     `git add [the filename of the file you want to add]`.
 
 * To permanently save your files to your repo type `git commit -m "A short summary of the work done"`. Use quotes for
