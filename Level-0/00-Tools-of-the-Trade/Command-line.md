@@ -4,7 +4,8 @@ A long time ago there was no such thing as a mouse or a window or any other way 
 keyboard and a screen. Instructions were written with the keyboard, and
 output from those instructuions were viewed on the screen. That's it. There were no fancy buttons to click, no pictures,
 pretty windows. It was just text and a keyboard. A user interacted directly with the computers CPU to tell it what to do.
-While this seems very primitive and difficult, it turns out that some things are better done using this method as opposed to
+While this seems very primitive and difficult, it turns out
+that some things are better done using this method as opposed to
 the Graphic User Interface. We will be using the Command Line for many of the tasks associated with your work.
 
 ## The Shell
@@ -43,12 +44,18 @@ It was just a communication portal to the computer. Later, terminals were develo
 However, they still relied on a main computer often located somewhere else than the location of the terminal.
 Several terminals would be connected to the same computer. This was standard practice until the advent of micro computers
 (That's the kind of computer you are looking at right now.) Fascinating history lesson , but so what, right? Well, the idea
-of a terminal is still with us. It is no longer a physical object, but we still use a thing called a terminal. These days the
-terminal is a program on your computer that mimics a real terminal. It is referred to as a "terminal emulator". An emulator
-is a computer program that pretends to be something that it isn't. There are lots of different types of emulators. They all do
-the same thing, they "emulate" a device or computer platform that is not physically present. We use the terminal emulator
-program to create a virtual terminal on the computer. You will see this term "virtual" a lot. It means a device or program that
-is recreated digitally and not the thing itself. A virtual terminal is a terminal that does everything a real terminal does,
+of a terminal is still with us. It is no longer a physical object, but we still use a thing called a terminal.
+These days the
+terminal is a program on your computer that mimics a real terminal.
+It is referred to as a "terminal emulator". An emulator
+is a computer program that pretends to be something that it isn't.
+There are lots of different types of emulators. They all do
+the same thing, they "emulate" a device or computer platform that is not physically present.
+We use the terminal emulator
+program to create a virtual terminal on the computer. You will see this term "virtual" a lot.
+It means a device or program that
+is recreated digitally and not the thing itself.
+A virtual terminal is a terminal that does everything a real terminal does,
 but isn't actually a real, physical terminal object.
 
 ### Where is the Terminal?
@@ -58,11 +65,12 @@ pressing CTRL-ALT-t. A window will pop up with a prompt and nothing else. This i
 the term "open a terminal" or "open a terminal window". This is the same thing as pressing CTRL-ALT-t. In the terminal you
 can do anything you would normally do by pointing and clicking a mouse.
 
- DRILL: Open a terminal window on your desktop
+DRILL: Open a terminal window on your desktop
 
 ### Terminal Commands
 
-As noted previously, commands in the terminal are really programs that you run to make things happen. This fact leads us to our
+As noted previously, commands in the terminal are really programs that you run to make things happen.
+This fact leads us to our
 first command. Whenever you wish to run a program, *any* program, from the command line all you need to do is just type the
 name of the program and press enter. This tells the shell to run that program. If the name you typed is not a program the
 shell will give you the message "command not found".  Typing the name of the program and pressing Enter is how you make a
@@ -75,4 +83,4 @@ There are *a lot* of Command Line commands. To begin we will introduce you to so
 the terminal. They are listed below:
 
 * `cd`
-    - This program changes the directory you are in. It is the same thing as clicking on a folder.  
+    - This program changes the directory you are in. It is the same thing as clicking on a folder.
