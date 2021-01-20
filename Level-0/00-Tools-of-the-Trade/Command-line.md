@@ -60,7 +60,8 @@ but isn't actually a real, physical terminal object.
 
 ### Where is the Terminal?
 
-Most computer operating systems have terminals emulators built into them. In Linux Ubuntu, you can open a terminal window by
+Most computer operating systems have terminals emulators built into them.
+In Linux Ubuntu, you can open a terminal window by
 pressing CTRL-ALT-t. A window will pop up with a prompt and nothing else. This is the terminal window. You will often hear
 the term "open a terminal" or "open a terminal window". This is the same thing as pressing CTRL-ALT-t. In the terminal you
 can do anything you would normally do by pointing and clicking a mouse.
@@ -88,14 +89,18 @@ computer can keep track of where all of your data is at any given moment.
 
 #### How Do I Find My Data?
 
-In the previous section we talked about the organizational structure of the file system. You can think of this structure as a
+In the previous section we talked about the organizational structure of the file system.
+You can think of this structure as a
 series of roads.
-In order to arrive at the directory that contains your data, you have to travel a road. This road is called a file path.
-Every file on your computer lives inside of a directory somewhere. You must lay out the road starting with where you are and
+In order to arrive at the directory that contains your data, you have to travel a road.
+This road is called a file path.
+Every file on your computer lives inside of a directory somewhere.
+You must lay out the road starting with where you are and
 ending with where you want to go. This is always going to be from one directory to another directory
 (Remember, every file lives in a directory). Here is an example of a typical file path: `Home/Projects/dev-training/my-addresses.txt`.
 You can see here we started at a directory called Home then proceeded through two more directories(Projects and dev-training)
-to arrive at the my-addresses.txt file. But why did we need to go through two additional directories to get to the file we wanted.
+to arrive at the my-addresses.txt file.
+But why did we need to go through two additional directories to get to the file we wanted.
 Ok, so while we call the file system a tree, it's actually clusters of directories inside other directories.
 Inside those directories are files. You could take the above file path and translate as "In the Home directory there lives
 the Project directory.
@@ -119,8 +124,3 @@ That means starting from the directory you are in then going forward from there.
 
 There are *a lot* of Command Line commands. To begin we will introduce you to some of the most used commands (programs) in
 the terminal. They are listed below:
-
-* `cd`
-    - This program moves you from one place to another. Just like the file path example above.
-This is the program you use to locate other files and directories. The whole command would look like this:
-`cd Home/Projects/dev-training/my-addresses.txt`. 
