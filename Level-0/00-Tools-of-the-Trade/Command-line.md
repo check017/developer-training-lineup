@@ -124,3 +124,22 @@ That means starting from the directory you are in then going forward from there.
 
 There are *a lot* of Command Line commands. To begin we will introduce you to some of the most used commands (programs) in
 the terminal. They are listed below:
+
+* `pwd`
+    - This command tells you which directory you are currently in. If you get lost this command helps you get unlost.
+
+* `cd`
+    - This command moves you around to different directories. You can use either a relative file path or an absolute file path.
+    If you use the absolute file path it doesn't matter what directory you are currently in. If you use a relative file path,
+    you must designate the file path relative to the directory you are currently in. If you just type `cd` with no file path,
+    you will be taken to your home directory
+
+* `ls`
+    - This command lists the contents of the directory you are currently in.If you want to see the contents of a different
+    directory, type `ls` followed by the directories path.
+    `ls/home/username/Documents` will show you the contents of the Documents directory.
+
+* `cat`
+
+    - This command is short for "concatenate". It lists the contents of a file. To use it, type `cat name-of-file.file-extension`.
+    This will allow you to view the contents of the file, but it does not allow for editing.
