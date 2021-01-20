@@ -129,7 +129,8 @@ the terminal. They are listed below:
     - This command tells you which directory you are currently in. If you get lost this command helps you get unlost.
 
 * `cd`
-    - This command moves you around to different directories. You can use either a relative file path or an absolute file path.
+    - This command moves you around to
+    different directories. You can use either a relative file path or an absolute file path.
     If you use the absolute file path it doesn't matter what directory you are currently in. If you use a relative file path,
     you must designate the file path relative to the directory you are currently in. If you just type `cd` with no file path,
     you will be taken to your home directory
