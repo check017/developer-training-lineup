@@ -60,7 +60,7 @@ but isn't actually a real, physical terminal object.
 
 ### Where is the Terminal?
 
-Most computer operating systems have terminals emulators built into them. In Linux, you can open a terminal window by
+Most computer operating systems have terminals emulators built into them. In Linux Ubuntu, you can open a terminal window by
 pressing CTRL-ALT-t. A window will pop up with a prompt and nothing else. This is the terminal window. You will often hear
 the term "open a terminal" or "open a terminal window". This is the same thing as pressing CTRL-ALT-t. In the terminal you
 can do anything you would normally do by pointing and clicking a mouse.
@@ -77,10 +77,50 @@ shell will give you the message "command not found".  Typing the name of the pro
 program run. Because command line commands are really programs that need to be run in order to do something they are typed
 first on the line.
 
+### The Directory Tree
+
+The files and directories (often incorrectly called a folder) on your computer are organized in a specfic way.
+This organization is referred to as a "tree".
+At the top of the tree there is a single folder called "root". Inside this directory are other directories that in turn
+contain yet more directories. Inside most of these directories there are indiviual files.
+If you lay it all out on paper, the file system looks like an upside down tree. By using this system of organization your
+computer can keep track of where all of your data is at any given moment.
+
+#### How Do I Find My Data?
+
+In the previous section we talked about the organizational structure of the file system. You can think of this structure as a
+series of roads.
+In order to arrive at the directory that contains your data, you have to travel a road. This road is called a file path.
+Every file on your computer lives inside of a directory somewhere. You must lay out the road starting with where you are and
+ending with where you want to go. This is always going to be from one directory to another directory
+(Remember, every file lives in a directory). Here is an example of a typical file path: `Home/Projects/dev-training/my-addresses.txt`.
+You can see here we started at a directory called Home then proceeded through two more directories(Projects and dev-training)
+to arrive at the my-addresses.txt file. But why did we need to go through two additional directories to get to the file we wanted.
+Ok, so while we call the file system a tree, it's actually clusters of directories inside other directories.
+Inside those directories are files. You could take the above file path and translate as "In the Home directory there lives
+the Project directory.
+Inside the Projects directory there lives the dev-training directory.
+Inside this directory there lives the file my-addresses.txt. Let's go there please." Placing things inside other things is
+called "nesting". This idea is very prevalent in software development.
+The tree file structure is really a nested directory structure.
+If you spread it all out, it does look like an upside down tree, but you can also think of it as things inside of things.
+Most of the time it will be referred to by the tree analogy, so you should probably go with that.
+
+#### Relative and Absolute File Paths
+
+An absolute file path is one that specifies the path starting from the root directory(The first directory there is). If you
+use an absolute file path you can go anywhere you want to go without having to worry about
+which directory you are currently in. You can only do this if you specify the entire file path starting from the root directory.
+Sometimes that can get pretty long. If you don't want to write out the whole path, you can use a relative file path. A
+relative file path is a path that is relative to the directory you are in.
+That means starting from the directory you are in then going forward from there. Using this file path
+
 ### Common Command Line Commands
 
 There are *a lot* of Command Line commands. To begin we will introduce you to some of the most used commands (programs) in
 the terminal. They are listed below:
 
 * `cd`
-    - This program changes the directory you are in. It is the same thing as clicking on a folder.
+    - This program moves you from one place to another. Just like the file path example above.
+This is the program you use to locate other files and directories. The whole command would look like this:
+`cd Home/Projects/dev-training/my-addresses.txt`. 
