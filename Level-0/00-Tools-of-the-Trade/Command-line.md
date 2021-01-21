@@ -126,7 +126,8 @@ As mentioned before, command line commands are actually programs that are run in
 These programs can be "tweaked" in order to specify exactly how you want them to run. This is done by specifying the tweak
 (more properly called an "argument") after writing the command itself. It would look something like this: `ls -la`.
 This command says, "List out the contents of this directory, and I want the long version (l) and I want everything,
-including anything hidden (a)." You might have noticed the arguments are preceeded by a "-". You can use this or you can use "--".
+including anything hidden (a)." You might have noticed the arguments are preceeded by a "-".
+You can use this or you can use "--".
 This second double dash is used when you want to write out the whole argument. So, you could say "-v" for version, or you
 could write "--version". Both of these arguments do the exact same thing.
 
@@ -164,11 +165,13 @@ could write "--version". Both of these arguments do the exact same thing.
 
     - This command is short for "move". It is used to move files around, but it can also be used to rename a file.
     This can be a little confusing.
-    How does moving a file relate to renaming a file? Let's take a look at it. Files can only be moved into a directory. So,
+    How does moving a file relate to renaming a file? Let's take a look at it.
+    Files can only be moved into a directory. So,
     if you type `mv my-file.txt my-directory` you are telling the computer to move "my-file.txt" into the "my-directory"
     directory. Moving a file is very similar to making a copy,
     but instead of making a copy and placing it into a directory you have
-    moved an already existing file into a directory. If you wanted to rename a file instead of moving it, you would write the
+    moved an already existing file into a directory.
+    If you wanted to rename a file instead of moving it, you would write the
     same command, except instead of specifying a directory you would supply a new file name. it would look like this:
     `mv my-file.txt your-file.txt`. This command changes the name of the file "my-file.txt" to "your-file.txt".
 
@@ -185,9 +188,10 @@ could write "--version". Both of these arguments do the exact same thing.
     - When you want to create a new directory, you use this command. It looks like this: `mkdir My-Directory`.
     This will create a directory in the current working directory.
     If you want to make a directory someplace else, you must specify the file path.
-    This command has a tweak (argument). It's `-p`. It means "parent". When you use this argument you can create a series of
+    This command has a tweak (argument). It's `-p`. It means "parent".
+    When you use this argument you can create a series of
     directories nested inside each other. It would look something like this: `mkdir -p Foo/Soo/Boo`. This creates a directory
     called "Foo". Inside that directory there lives the directory "Soo".
     Inside the Soo directory there lives the "Boo" directory.
-    If the directory does not already exist, one will automatically be created. 
+    If the directory does not already exist, one will automatically be created.
 
