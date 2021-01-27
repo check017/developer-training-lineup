@@ -138,7 +138,8 @@ quickly find the data you are looking for will improve.
 
 #### Command Line Arguments
 
-Command line programs can be "tweaked" in order to specify exactly how you want them to run. This is done by specifying the tweak
+Command line programs can be "tweaked" in order to specify exactly how you want them to run.
+This is done by specifying the tweak
 (more properly called an "argument") after writing the command itself. It would look something like this: `ls -la`.
 This command says, "List out the contents of this directory, and I want the long version (l) and I want everything,
 including anything hidden (a)." You might have noticed the arguments are preceeded by a "-".
@@ -253,10 +254,12 @@ could write "--version". Both of these arguments do the exact same thing.
     It means that the computer will return the file path to the file.
     If there are multiple matches to what you are looking for, each file path will be returned.
     If you are not specific enough, you could get several pages of file paths.
-    What the command is doing, actually, is looking for the words you typed and displaying every instance where that word or
-    words exist in a file path. So, it's a pretty broad search. The command will find anything you tell it.
+    What the command is doing, actually,
+    is looking for the words you typed and displaying every instance where that word or
+    words exist in a file path.
+    So, it's a pretty broad search. The command will find anything you tell it.
     It helps to be as specific as you can.
 
 * `find`
 
-    - Similar to the `locate` command, `find` is used to find 
+    - Similar to the `locate` command, `find` is used to find
