@@ -86,8 +86,10 @@ At the top of the tree there is a single folder called "root". Inside this direc
 contain yet more directories. Inside most of these directories there are individual files.
 If you lay it all out on paper, the file system looks like an upside down tree. By using this system of organization your
 computer can keep track of where all of your data is at any given moment.
+This system of file organization is very common throughout many programs and applications, not just in the terminal.
+It is a good idea to get familiar with it as you will be using it in many different places in your development process.
 
-#### How Do I Find My Data?
+### How Do I Find My Data?
 
 In the previous section we talked about the organizational structure of the file system.
 You can think of this structure as a
@@ -100,7 +102,7 @@ ending with where you want to go. This is always going to be from one directory 
 (Remember, every file lives in a directory). Here is an example of a typical file path: `Home/Projects/dev-training/my-addresses.txt`.
 You can see here we started at a directory called Home then proceeded through two more directories(Projects and dev-training)
 to arrive at the my-addresses.txt file.
-But why did we need to go through two additional directories to get to the file we wanted.
+But why did we need to go through two additional directories to get to the file we wanted?
 Ok, so while we call the file system a tree, it's actually clusters of directories inside other directories.
 Inside those directories are files. You could take the above file path and translate as "In the Home directory there lives
 the Project directory.
@@ -123,7 +125,20 @@ That means starting from the directory you are in then going forward from there.
 ### Common Command Line Commands
 
 As mentioned before, command line commands are actually programs that are run in order to do something.
-These programs can be "tweaked" in order to specify exactly how you want them to run. This is done by specifying the tweak
+There are literally thousands of different commands you can use. No one could possibly remember all of them.
+And more are being created all the time.
+So, how do you know what to use and how to use it? Every command line command has a help section and a manual.
+You can access these by typing either `[command] help` or `man [command]`. That last one is short for "manual".
+It will tell you everything you need to know about that particular command.
+Bear in mind that sometimes there is quite a lot of material covered in the help or man pages. Don't be discouraged by this.
+Remember, no one knows it all. Google is your friend. Use it to ask questions.
+There are thousands of different resources on the internet. You will definitely find the answer...eventually.
+As you become more familiar with your tools and their use, your ability to
+quickly find the data you are looking for will improve.
+
+#### Command Line Arguments
+
+Command line programs can be "tweaked" in order to specify exactly how you want them to run. This is done by specifying the tweak
 (more properly called an "argument") after writing the command itself. It would look something like this: `ls -la`.
 This command says, "List out the contents of this directory, and I want the long version (l) and I want everything,
 including anything hidden (a)." You might have noticed the arguments are preceeded by a "-".
@@ -142,7 +157,7 @@ could write "--version". Both of these arguments do the exact same thing.
     you will be taken to your home directory
 
 * `ls`
-    - This command lists the contents of the directory you are currently in.If you want to see the contents of a different
+    - This command lists the contents of the directory you are currently in. If you want to see the contents of a different
     directory, type `ls` followed by the directories path.
     `ls/home/username/Documents` will show you the contents of the Documents directory.
 
@@ -195,3 +210,53 @@ could write "--version". Both of these arguments do the exact same thing.
     Inside the Soo directory there lives the "Boo" directory.
     If the directory does not already exist, one will automatically be created.
 
+* `rmdir`
+
+    - If you need to remove a directory, use this command. It will only remove directories that are empty.
+    The directory you want to remove can't have any other directories or files in it at the time you want to remove it.
+
+* `rm`
+
+    - This command removes a *file* from a directory. It will not remove a directory, just the file. However,
+    if you use the `-r` argument and type in a directory name, it will delete the directory *and everything in it*.
+    It would look like this: `rm -r directory-name`. Be careful with this command.
+    There is no fetching the directory from a trash can. Once it is gone, *it is gone forever*.
+
+* `touch`
+
+    - This command creates a new file. If you need a new, empty file use `touch`.
+    You have to say what you want the name of the file to be.
+    It looks like this: `touch filename` . Using a absolute file path, you can specify where you want your file created.
+    That would look like this: `touch /home/username/Documents/new-file.txt` . This command will create a new file
+    called `new-file.txt` inside the Documents directory. Bash doesn't care about file extensions.
+    It just reads whatever you wrote there.
+    However, we humans *do* care about file extensions. They tell us what kind of file we are dealing with.
+    Other programs also care about file extensions. It tells them what files belong to them and what files belong to
+    something else. For example, files containing C++ code would have a file extension of `.cpp` or `.c` while a Javascript
+    file would have a `.js` file extension, and so on.
+    When you create your new file it is a good idea to include a file extension so you know what that file is for.
+    If you create a file without a file extension it will be given a `.txt` file extension by default.
+    That means its just a text file.
+
+* `locate`
+
+    - If you need to find a file, use the `locate` command. It looks like this: `locate name-of-file.ext` .
+    But what if you don't know the exact name of the file? In that case you can use the `*` argument.
+    The `*` is known as the wildcard. It means "give me anything and everything". In combination with at least one word you
+    think might be in the filename, the wildcard can narrow down your search. Here is an example: `locate *.txt` .
+    This tells the computer to find anything that has a `.txt` file extension.
+    Granted, that particualar command doesn't really narrow down anything.
+    You could also use something like this: `locate name*box` .
+    This command will locate any file that has the word "name" and the word "box" in it. You can also use the `-i` argument
+    to make the search case insensitive.
+    What do we mean by "locate"?
+    It means that the computer will return the file path to the file.
+    If there are multiple matches to what you are looking for, each file path will be returned.
+    If you are not specific enough, you could get several pages of file paths.
+    What the command is doing, actually, is looking for the words you typed and displaying every instance where that word or
+    words exist in a file path. So, it's a pretty broad search. The command will find anything you tell it.
+    It helps to be as specific as you can.
+
+* `find`
+
+    - Similar to the `locate` command, `find` is used to find 
