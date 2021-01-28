@@ -262,4 +262,49 @@ could write "--version". Both of these arguments do the exact same thing.
 
 * `find`
 
-    - Similar to the `locate` command, `find` is used to find
+    - The find command is very similar to the `locate` command. They do pretty much the same thing,
+    just in slightly different ways. The `locate` command is faster. However, it relies on a "snapshot" of your file system.
+    A snapshot is a recording of all the files and directories on your computer taken at a specific moment in time,
+    just like a photograph. Usually, your computer takes a snapshot of your file system once every 24 hours.
+    So, if you are looking for a file that was saved in the system before the next snapshot is taken, you won't find it.
+    On the bright side, by using this snapshot `locate` can find
+    what you are looking for *much* faster than the `find` command. The `find` command does not use a snapshot.
+    It goes through all of your files looking for the one you want. On a large system, this can take up to several minutes.
+    There are lots of different arguments you can put on the `find` command.
+    You can look them up by using `find -help`.
+    Be warned, a lot of the "explanations" given in the help page may serve nothing more than to confuse you more.
+    Use `locate` whenever possible.
+
+* `sudo`
+
+    - Your computer is organized not only by the directory tree.
+    There is also a system to designate who can access what on the computer.
+    Some users need to access only some things. Other users need to access other things. Users can also be grouped together.
+    One group has access to some things but not other things, while another group has access to still other things.
+    A user can be a member of more than one group. In this way, who is doing what where can be kept track of.
+    There is also the benefit of security. Only some users, but not other users, can access certain files or directories.
+    A user that has access to *everything* on the computer is described as a user with "root privileges".
+    That means the user can access anything on the system anywhere.
+    There are certain commands that require root privileges to execute.
+    Downloading software onto the computer is one example of this.
+    So, what if you need to download a software package needed for your project?
+    Do you need to go find someone who has root privileges to do it for you? The answer is no, you don't.
+    You can use the command `sudo`. This command allows you to execute a command as if you had root privileges.
+    It doesn't give you root privileges, it just lets act like you do for that one command.
+
+* `Ctrl+C`
+
+    - If you want to stop the current program while it is running use `Ctrl+C`. This will stop the program you are running.
+
+#### Terminal Editors
+
+Bash comes with a program for writing and editing files. It is called nano. You access it simply by typing `nano`.
+This will open the program and allow you to write whatever you want.
+You can also save your file by giving it a name and telling nano to save it. If you already know what you want to call your
+file you can also just type `nano file-name.txt` . This will create a file named "file-name" and open that file in nano.
+When you exit nano, the program will ask you if you want to save your file.
+The file will be saved in the current working directory. You can also specify a file path to tell nano not only what the file
+name should be, but also where you want it to go. It would look something like this: `nano Documents/new-file.txt` .
+This command will create a file named "new-file",
+open it in nano, then save it in the Documents directory when you're done with it. There are several different editors available.
+Bash includes nano as the default text editor, but you can download a different one if you want. 
