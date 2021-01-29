@@ -85,3 +85,10 @@ Bear in mind that in the case of undefined there is at least a declared variable
 therefore not Null. 0 is a value. Even though it evaluates to nothing, it still has a value, i.e. no value.
 It is not Null as there is a value that equates to nothing.
 Null would be absolutely nothing there at all, no variable, no value of any kind.
+
+## Symbol
+
+A symbol is best described as a unique identifier. This is a relatively new data type in Javascript.
+It is mostly used to define properties in objects. Prior to the introduction of symbols only a string could be used to
+identify a value inside of an object. Now you can use a symbol.
+These are also used to simulate private properties in objects.
