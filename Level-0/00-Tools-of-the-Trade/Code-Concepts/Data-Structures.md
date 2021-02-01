@@ -78,6 +78,7 @@ You can access the object literal like this: `console.log(myObj.name)`. This wil
 You can also assign any of these properties to a variable like so: `let aName = myObj.name;`. Now the value in `myObj`
 is assigned to `aName`.
 It would be printed like this: `console.log(aName);`
-This will also print "Bill" to the screen. There are versions of Associative Arrays in pretty much every language you will be
+This will also print "Bill" to the screen.
+There are versions of Associative Arrays in pretty much every language you will be
 working with. The concept of encapsulating data in a series of key/value pairs is the same in every version.
 
