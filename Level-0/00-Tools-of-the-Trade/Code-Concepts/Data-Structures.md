@@ -54,3 +54,30 @@ When you name your array, try to be a little more specific in the naming. This n
 In Javascript you can put anything you want in an array. You can even put other arrays into an array.
 You can have different data types in the same array.
 Arrays are used when you want to store a group of values together under one name, in order, with a numerical index.
+
+## Associative Arrays
+
+This particular data structure is used in many different languages.
+In each language they might be called something different, but at the end of the day they are all associative arrays.
+In the previous section we discussed the concept of a value and an identifier for that value.
+In the case of arrays, that identifier is a number.
+This concept of having a value and giving it a name is something you will
+see over and over again in software development. This relationship is known as a key/value pair. The key is the identifier
+and the value is the thing we want identified. For arrays, the key is always a number.
+It has a special name. We call it an index. If we wanted to use something other than a number for our array we could.
+If we used a string instead of just a number, we would have created an associative array.
+The idea here is there is a thing and a name for that thing.
+In Javascript, this structure is not called an associative array.
+It is called an object literal. The idea is the same, however.
+Since we are focusing on Javascript, this is what an object literal would look like: `const myObj = {
+name : "Bill",
+age : 45,
+occupation : "Janitor"
+}` Notice how instead of just a number, we now have a description of what the thing is.
+You can access the object literal like this: `console.log(myObj.name)`. This will print "Bill" on the screen.
+You can also assign any of these properties to a variable like so: `let aName = myObj.name;`. Now the value in `myObj`
+is assigned to `aName`.
+It would be printed like this: `console.log(aName);`
+This will also print "Bill" to the screen. There are versions of Associative Arrays in pretty much every language you will be
+working with. The concept of encapsulating data in a series of key/value pairs is the same in every version.
+
