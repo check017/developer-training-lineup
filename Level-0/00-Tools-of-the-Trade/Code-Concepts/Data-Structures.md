@@ -23,16 +23,20 @@ Before we get started, let's define some terms.
 
 * `Structured Data Type`
 
-    - A data type that is comprised of several data items each one being a collection of other data items all using a single identifier.
+    - A data type that is comprised of several
+    data items each one being a collection of other data items all using a single identifier.
     Oh, you want that in *English*?
-    Ok, a structured type is a something that is made up of a bunch of other, smaller somethings arranged in a particular way.
+    Ok, a structured type is a something that
+    is made up of a bunch of other, smaller somethings
+    arranged in a particular way.
     An Array is an example of a Structured Data Type.
 
 The two definitions given above seem very similar. That's because they largely are the same thing. However,
 some make a distinction between the two.
 Data Structures can include a wide variety of different methods of organizing data. A Structured Data Type refers to a more
 specific entity used to organize data. It's kind of like distinguishing between a cat and a Orange Tabby cat.
-One is a more specific description of a general type of animal. Anything that puts pieces of data together in such a way that
+One is a more specific description of a general type of animal.
+Anything that puts pieces of data together in such a way that
 relationships can be inferred or defined is a data structure.
 Exactly *how* it organizes the data would be the structured data type.
 
