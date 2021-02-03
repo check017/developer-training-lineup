@@ -103,7 +103,7 @@ If we used a string instead of just a number, we would have created an associati
 The idea here is there is a thing and a name for that thing.
 In Javascript, this structure is not called an associative array.
 It is called an object literal. The idea is the same, however.
-Since we are focusing on Javascript, this is what an object literal would look like: 
+Since we are focusing on Javascript, this is what an object literal would look like:
 
 ```javascript
 const myObj = {
@@ -113,7 +113,7 @@ occupation : "Janitor"
 };
 ```
 
- Notice how instead of just a number, we now have a description of what the thing is.
+Notice how instead of just a number, we now have a description of what the thing is.
 You can access the object literal like this: `console.log(myObj.name)`. This will print "Bill" on the screen.
 You can also assign any of these properties to a variable like so: `let aName = myObj.name;`. Now the value in `myObj`
 is assigned to `aName`.
@@ -134,16 +134,16 @@ const studentData = [
     { "name" : "Danny",
       "age" : "34",
       "class" : "Math"},
-    
+
     { "name" : "Sally",
       "age" : "23",
       "class" : "Science"
-      
     }]
 
 ```
 
-In this example, we have a JSON object containing an array. The elements of the array are objects. This is how data from the
+In this example, we have a JSON object containing an array.
+The elements of the array are objects. This is how data from the
 server would be sent back to the client. Your browser (or some other application) would then interpret this JSON object and
 display it in a useful format for you to see. The JSON format is something used mostly for transporting data from one place
 to another. It is closely associated with API's (Application Program Interface).
