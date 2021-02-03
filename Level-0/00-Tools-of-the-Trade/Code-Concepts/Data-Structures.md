@@ -40,6 +40,40 @@ Anything that puts pieces of data together in such a way that
 relationships can be inferred or defined is a data structure.
 Exactly *how* it organizes the data would be the structured data type.
 
+## Variables
+
+A variable is perhaps the simplest type of data structure there is.
+You can think of a variable as a an empty box (sometimes also referred to as a bucket).
+A value like a number or a string can be placed in this box. The name you give the variable is the name of the box.
+It looks like this: `x = 5;` In this example "x" is the name of the box.
+The value "5" is the thing in the box. Now, whenever the computer sees an "x" it knows that you mean "5".
+So, why not just put a "5" there? The easy answer is because the value (the thing in the box) can change,
+but the box never changes. It is always a box. You see this in mathematical formulas alot. For example, A = l * h.
+"A" stands for Area, "l" is length, and "h" means height. These are all variables.
+The values you put into these boxes can be different depending on the rectangle you happen to be dealing with at the moment.
+
+However, the formula holds true regardless of what values you use for each variable.
+In the case of a mathematical formula, there is a relationship between the variables. That is not necessarily true for code.
+You can simply say, "This is a box. This box is called "x". Put "5" in the box called "x" ".
+By putting a value in a box you also have the advantage of centralizing the value.
+Wherever there is an "x" the computer sees a "5".
+
+If we ever need to change that value, you do not
+need to go through and find every instance of "x".
+We can just change the value once, and have the new value applied to every instance of "x".
+In some computer langauges you have to
+tell the computer
+what kind of value you want to put in the box.
+If you want to put an integer in the box
+you have to say so, `int x = 5;`. "int" stands for "integer".
+If you wanted to use a Boolean, it would look like this, `bool x = true;` .
+We say this kind of language is strong typed.
+Languages like C, C++, and Java are strong typed languages.
+
+Javascript is a loosely typed language.
+This means that you do not need to specify what kind of data you want to put in the box. It can be anything.
+Javascript will figure out what data is what.
+
 ## Arrays
 
 Arrays are data structures that hold values in a specific order.
@@ -69,11 +103,17 @@ If we used a string instead of just a number, we would have created an associati
 The idea here is there is a thing and a name for that thing.
 In Javascript, this structure is not called an associative array.
 It is called an object literal. The idea is the same, however.
-Since we are focusing on Javascript, this is what an object literal would look like: `const myObj = {
+Since we are focusing on Javascript, this is what an object literal would look like: 
+
+```javascript
+const myObj = {
 name : "Bill",
 age : 45,
 occupation : "Janitor"
-}` Notice how instead of just a number, we now have a description of what the thing is.
+};
+```
+
+ Notice how instead of just a number, we now have a description of what the thing is.
 You can access the object literal like this: `console.log(myObj.name)`. This will print "Bill" on the screen.
 You can also assign any of these properties to a variable like so: `let aName = myObj.name;`. Now the value in `myObj`
 is assigned to `aName`.
@@ -82,3 +122,29 @@ This will also print "Bill" to the screen.
 There are versions of Associative Arrays in pretty much every language you will be
 working with. The concept of encapsulating data in a series of key/value pairs is the same in every version.
 
+## JSON
+
+JSON is an abbreviation for JavaScript Object Notation. It is used to send data from the server to the client.
+When you make a request for data from a server, the data returned is most likely in a JSON format. Your browser
+(or other application) will then translated and display the data you requested.
+
+```json
+
+const studentData = [
+    { "name" : "Danny",
+      "age" : "34",
+      "class" : "Math"},
+    
+    { "name" : "Sally",
+      "age" : "23",
+      "class" : "Science"
+      
+    }]
+
+```
+
+In this example, we have a JSON object containing an array. The elements of the array are objects. This is how data from the
+server would be sent back to the client. Your browser (or some other application) would then interpret this JSON object and
+display it in a useful format for you to see. The JSON format is something used mostly for transporting data from one place
+to another. It is closely associated with API's (Application Program Interface).
+Don't worry about that now. We'll cover API's in a future section.
