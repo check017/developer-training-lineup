@@ -20,9 +20,12 @@ underlying *concept* behind that piece of code. These ideas do not change much f
 The only real difference is emphasis. Some languages tend to emphasize one concept over another. However, the concept itself
 didn't really change. Computers do not think. They have no capacity for even the most basic level rational thought.
 Your household pet has more capacity for thinking than a computer will ever have.
-That statement might offend some of the A.I. boys, but it is demonstratively true. The computer only does what you tell it to
-do, nothing more. You are the mind that gives the instructions. The computer can't handle executing instructions the way a
-human can. It does not understand inference. It cannot not assume anything. It has no common knowledge. Because of this,
+That statement might offend some of the A.I. boys, but it is demonstratively true.
+The computer only does what you tell it to
+do, nothing more. You are the mind that gives the instructions.
+The computer can't handle executing instructions the way a
+human can. It does not understand inference. It cannot not assume anything.
+It has no common knowledge. Because of this,
 we have to be very clever in giving the computer
 instructions that do not require any of these things.
 By having a thorough understanding of concepts, our job is made much easier.
@@ -53,13 +56,13 @@ Use a Switch Statement for everything else. It looks like this:
 ```javascript
 switch(expression) {
     case x: //Do something
-    break; 
+    break;
     case y: //Do something
     break;
     case z: //Do something
     break;
     default: //If none of the above, do this
-}  
+}
 ```
 
 The expression can be anything you need to check. It could be a number or a string or a boolean. The expression is seen by
@@ -114,8 +117,8 @@ But just to keep it simple, the above concept is what a For Loop does. It looks 
 
 ```javascript
 for(i = 0; i < 20; i++) {
-   
-   console.log("Hello World!")
+
+console.log("Hello World!")
 };
 ```
 
