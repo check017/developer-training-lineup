@@ -55,13 +55,13 @@ Use a Switch Statement for everything else. It looks like this:
 
 ```javascript
 switch(expression) {
-    case x: //Do something
+   case x: //Do something
     break;
-    case y: //Do something
+   case y: //Do something
     break;
-    case z: //Do something
+   case z: //Do something
     break;
-    default: //If none of the above, do this
+   default: //If none of the above, do this
 }
 ```
 
@@ -78,7 +78,7 @@ If you have only two conditions to check, use the Ternary Operator. It looks lik
 ```javascript
 var age = 25;
 
-var canDrive = age > 16 ? "yes" : "no";
+var canDrive = age > 16 ? 'yes' : 'no';
 ```
 
 The ternary operator has three parts (ternary means "composed of three parts").
@@ -118,7 +118,7 @@ But just to keep it simple, the above concept is what a For Loop does. It looks 
 ```javascript
 for(i = 0; i < 20; i++) {
 
-console.log("Hello World!")
+console.log('Hello World!')
 };
 ```
 
@@ -146,7 +146,7 @@ get to 10. Otherwise, your loop will continue forever. It looks like this:
 ```javascript
 let count = 20;
 while(count > 0){
-    console.log("Hello World");
+    console.log('Hello World');
     count--;
 }
 ```
