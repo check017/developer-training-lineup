@@ -73,7 +73,8 @@ It looks like this: `10 / 2 = 5`. All it does is divide values.
 
 ## Modulus
 
-The modulus operator returns to remainder of a number divided by a number. It looks like this: `10 % 6 = 4`. You can use the
+The modulus operator returns to remainder of
+a number divided by a number. It looks like this: `10 % 6 = 4`. You can use the
 modulus operator to determine if a number is even or odd. It looks like this:
 
 ```javascript
@@ -84,4 +85,4 @@ console.log(foo);
 If the console shows a 0 (in the above example, it will) then you know the number was evenly divided because there is no
 remainder. You can also use it to determine if a number is divisible by another number. If 0 is returned by the modulus
 operation, you know that the first
-number is divisible by the second number. This can be useful when you need to determine the multiples of a given number. 
+number is divisible by the second number. This can be useful when you need to determine the multiples of a given number.

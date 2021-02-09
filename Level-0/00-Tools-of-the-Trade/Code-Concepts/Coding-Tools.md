@@ -55,13 +55,13 @@ Use a Switch Statement for everything else. It looks like this:
 
 ```javascript
 switch(expression) {
-   case x: //Do something
+  case x: //Do something
     break;
-   case y: //Do something
+  case y: //Do something
     break;
-   case z: //Do something
+  case z: //Do something
     break;
-   default: //If none of the above, do this
+  default: //If none of the above, do this
 }
 ```
 
