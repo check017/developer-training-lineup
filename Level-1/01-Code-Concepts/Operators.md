@@ -118,8 +118,65 @@ x == y; (true)
 The difference here is the data type. In the example above `x` is an integer data type. `y` is a float data type.
 However, the *values* are the same, so the expression evaluates to `true`.
 
-## Not
+## Logical Operators
 
-This operator looks like this: `!`. It means NOT. It converts `true` to `false` and vice versa.
-Just to keep it simple, if you were to say `4 !== 5` you are saying, "4 is not equal to 5". This expression would, of course,
-evaluate to `true`. If you take away the `!`, then the same expression would be `false`.
+A logical operator allow us to make more complex decisions than just *this* or *that*. Using a logical operator,
+we can say *this* `AND` *that* `OR` *the other thing* but `NOT` that thing or something similar. Logical operators allow for
+our code to take multiple paths rather than just two possible outcomes. Let's go over the main Logical Operators:
+
+## AND
+
+The `AND` operator looks like this `&&`. When you are using the `&&` operator you are telling the computer to evaluate
+two different expressions. If both are true, the computer evalutes the expression to `true`. If one or both
+expressions evaluate to `false`, the whole expression is false. It is like saying, "If you clean your room `AND` you finish
+your homework, you can go out." If you fail to complete either of these tasks, you are not going anywhere. It looks like this:
+
+```javascript
+let foo = 5;
+let bar = 10;
+
+if(foo > 4 && bar < 10 ) {
+  console.log('You may go.');
+} else {
+    console.log('Get back to work!');
+};
+```
+
+If either expression is `false`, the entire expression is `false` and the code block will not be executed. In the above
+example, both expressions evaluate to `true`.
+So, the code block will be executed.
+
+## OR
+
+The `OR` operator is similar to the `AND` operator. It looks like this `||` The difference is that only one expression is
+required to evaluate to `true`
+before the entire expression evaluates to `true`.
+It is like saying, "You can get in if the door is unlocked `OR` if the window is open." It looks like this:
+
+```javascript
+let foo = 5;
+let bar = 10;
+
+if(foo > 4 || bar > 20 ){
+    console.log('You got in.');
+}else {
+    console.log('You are locked out.');
+};
+```
+
+In the above example, `foo` evaluates to `true`, but `bar` evaluates to `false`. Using the `||` operator, the entire
+expression evaluates to `true`, so the entire
+expression evaluates to `true` and the code is executed.
+
+## NOT
+
+The `NOT` operator converts a `true` expression into a `false` expression. It looks like this `!`.
+It can also change a `false` expression into a `true` expression. It looks like this: 
+
+```javascript
+let foo = 4;
+let bar = 6;
+
+console.log(!foo && bar > 10);
+// expected output: false
+```
