@@ -32,13 +32,53 @@ By having a thorough understanding of concepts, our job is made much easier.
 
 ## Making Decisions
 
-One of the simplest but most powerful tools you will use is the IF/ELSE statement.
-With this statemment you can give the power of decision to the computer!. The idea is this:
-"If this is the case, do this. If not, do something else." We can take this one step further by adding *else if*.
-With this addition, there can be multiple cases you can check, and have a different set of instructions for each condition.
-However, there are better ways to handle multiple conditions that need to be checked.
-It is allowed to use a single IF statement without a ELSE statement. This is used to test
-conditions to see if they are a certain value, but you don't necessarily want to do anything if they're not.
+Often you will find the need to make decisions in your code. If a value is this, do that. If not, do another thing. There is
+statement built right into Javascript to execute decision making. This is the `if` statement. It looks like this:
+
+```javascript
+if(some condition){
+  do this;
+}
+```
+
+This is referred to as an `if/then` statement. Basically, you are saying, "If this condition is true, then do these actions.".
+
+We can take this idea a little further with the inclusion of `else`. With this statement we can tell the computer to do one
+thing if the condition is true.
+But if the condition is not true, do this other thing. it looks like this:
+
+```javascript
+if(some condition){
+  do this;
+} else {
+   do something different;  
+};
+```
+
+We can continue to add different conditions by using the `else if` statement. It looks like this:
+
+```javascript
+if(some condition){
+  do this;
+} else if(some other condition){
+  do this;
+} else {
+  do this;
+};
+```
+
+Let's take a look at the full `if/else if/else` statement using real values:
+
+```javascript
+let count = 25;
+if(count > 26){
+  console.log('This number is bigger than 26');
+} else if (count < 10){
+  console.log('This number is bigger than 10');
+  } else {
+    console.log('This number is somewhere between 25 and 10');
+  };
+```  
 
 ### Switch Statement
 
@@ -71,9 +111,7 @@ the computer executes the instructions written there.
 
 ### Ternary Operator
 
-If you need to check only two different conditions, it is handy to use a Ternary Operator.
-This keeps your code concise and thus easier to read.
-If you have only two conditions to check, use the Ternary Operator. It looks like this:
+If you need to check if a given condition is one thing or another thing, use a ternary operator.
 
 ```javascript
 var age = 25;
@@ -82,8 +120,8 @@ var canDrive = age > 16 ? 'yes' : 'no';
 ```
 
 The ternary operator has three parts (ternary means "composed of three parts").
-First we have the expression in question `age > 16` . Then we have the yes/no decision.
-The first part evaluates to "true" and the second part evaluates to "false".
+First we have the expression in question `age > 16` . Then we have the yes/no decision. The expression is the thing we are checking.
+The first part after the `?` evaluates to "true" and the second part evaluates to "false".
 This never changes, it is always expression, true, then false. This can get a little more sophisticated than just yes/no.
 You can also put instructions in there. If the expression is true, do this. If it is false, do something else.
 It would look like this:

@@ -66,6 +66,11 @@ saying 8 + 8 + 8 + 8. Your computer can add stuff way, way, way faster than you 
 the number to itself the number of times you say. It does this really, really fast. Whenever you need to multiply
 numbers use the `*` operator.
 
+## Exponent
+
+The exponent operator looks like this `**`. It raises a number to the specified power. It looks like this : `2**5 = 10`.
+This is the same as saying '2 to the 5th power'.
+
 ## Division
 
 The division operator looks like this `/`. It divides the operand on the left by the operand on the right.
@@ -86,3 +91,35 @@ If the console shows a 0 (in the above example, it will) then you know the numbe
 remainder. You can also use it to determine if a number is divisible by another number. If 0 is returned by the modulus
 operation, you know that the first
 number is divisible by the second number. This can be useful when you need to determine the multiples of a given number.
+
+## Strict Equality
+
+The strict equality operator looks like this" `===`. It is used to compare two values. These values must be *exact*.
+This means they must not only be the same value, but the same data type as well. It looks like this:
+
+```javascript
+let x = 4;
+let y = 4;
+
+x === y; (true)
+```
+
+## Loose Equality
+
+The loose equality operator looks like this: `==`. This compares values but ignores the data type. It looks like this:
+
+```javascript
+let x = 4;
+let y = 4.0;
+
+x == y; (true)
+```
+
+The difference here is the data type. In the example above `x` is an integer data type. `y` is a float data type.
+However, the *values* are the same, so the expression evaluates to `true`.
+
+## Not
+
+This operator looks like this: `!`. It means NOT. It converts `true` to `false` and vice versa.
+Just to keep it simple, if you were to say `4 !== 5` you are saying, "4 is not equal to 5". This expression would, of course,
+evaluate to `true`. If you take away the `!`, then the same expression would be `false`.
