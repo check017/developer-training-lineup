@@ -32,7 +32,8 @@ By having a thorough understanding of concepts, our job is made much easier.
 
 ## Making Decisions
 
-Often you will find the need to make decisions in your code. If a value is this, do that. If not, do another thing. There is
+Often you will find the need to make decisions in your code.
+If a value is this, do that. If not, do another thing. There is
 statement built right into Javascript to execute decision making. This is the `if` statement. It looks like this:
 
 ```javascript
@@ -51,7 +52,7 @@ But if the condition is not true, do this other thing. it looks like this:
 if(some condition){
   do this;
 } else {
-   do something different;  
+  do something different;
 };
 ```
 
@@ -78,7 +79,7 @@ if(count > 26){
   } else {
     console.log('This number is somewhere between 25 and 10');
   };
-```  
+```
 
 ### Switch Statement
 
@@ -120,7 +121,8 @@ var canDrive = age > 16 ? 'yes' : 'no';
 ```
 
 The ternary operator has three parts (ternary means "composed of three parts").
-First we have the expression in question `age > 16` . Then we have the yes/no decision. The expression is the thing we are checking.
+First we have the expression in question `age > 16` .
+Then we have the yes/no decision. The expression is the thing we are checking.
 The first part after the `?` evaluates to "true" and the second part evaluates to "false".
 This never changes, it is always expression, true, then false. This can get a little more sophisticated than just yes/no.
 You can also put instructions in there. If the expression is true, do this. If it is false, do something else.
