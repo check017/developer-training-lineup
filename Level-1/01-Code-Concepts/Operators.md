@@ -121,7 +121,9 @@ However, the *values* are the same, so the expression evaluates to `true`.
 ## Logical Operators
 
 A logical operator allow us to make more complex decisions than just *this* or *that*. Using a logical operator,
-we can say *this* `AND` *that* `OR` *the other thing* but `NOT` that thing or something similar. Logical operators allow for
+we can say *this* `AND` *that* `OR` *the other thing*
+but `NOT` that thing or something similar.
+Logical operators allow for
 our code to take multiple paths rather than just two possible outcomes. Let's go over the main Logical Operators:
 
 ## AND
@@ -129,7 +131,9 @@ our code to take multiple paths rather than just two possible outcomes. Let's go
 The `AND` operator looks like this `&&`. When you are using the `&&` operator you are telling the computer to evaluate
 two different expressions. If both are true, the computer evalutes the expression to `true`. If one or both
 expressions evaluate to `false`, the whole expression is false. It is like saying, "If you clean your room `AND` you finish
-your homework, you can go out." If you fail to complete either of these tasks, you are not going anywhere. It looks like this:
+your homework, you can go out."
+If you fail to complete either of these tasks,
+you are not going anywhere. It looks like this:
 
 ```javascript
 let foo = 5;
@@ -171,7 +175,7 @@ expression evaluates to `true` and the code is executed.
 ## NOT
 
 The `NOT` operator converts a `true` expression into a `false` expression. It looks like this `!`.
-It can also change a `false` expression into a `true` expression. It looks like this: 
+It can also change a `false` expression into a `true` expression. It looks like this:
 
 ```javascript
 let foo = 4;

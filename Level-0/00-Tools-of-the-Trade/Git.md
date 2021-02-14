@@ -49,7 +49,7 @@ Before we get started, let's define some terms.
 
 ## Procedure
 
-* Open a terminal window on your machine (CTRL+ALT+t
+* Open a terminal window on your machine (CTRL+ALT+t)
 
 * Navigate to your Projects directory. (If you don't have a Projects directory, make one with `mkdir Projects`).
 
@@ -72,8 +72,9 @@ and what has been staged.
 * To permanently save your files to your repo type `git commit -m "A short summary of the work done"`. Use quotes for
     the message part.
 
-* Once you committed your file, that's the end of the cycle. You can always make additional changes later and then add,
-    stage, and commit them as well. In fact, it is expected that you do.
+* Once you have committed your file, that's the end of the cycle. You can always make additional changes later and then add,
+stage, and commit them as well.
+In fact, it is expected that you do.
 
 The above is the basic set of steps used to create a repository, add files to the staging area, and commit (permanently
 save) them to your repo.
