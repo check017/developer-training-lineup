@@ -304,8 +304,8 @@ You can also save your file by giving it a name and telling nano to save it. If 
 file you can also just type `nano file-name.txt` . This will create a file named "file-name" and open that file in nano.
 When you exit nano, the program will ask you if you want to save your file.
 The file will be saved in the current working directory.
-You can also specify a file path to tell nano not only what the file
+You can also specify a file path to tell `nano` not only what the file
 name should be, but also where you want it to go. It would look something like this: `nano Documents/new-file.txt` .
 This command will create a file named "new-file",
 open it in nano, then save it in the Documents directory when you're done with it. There are several different editors available.
-Bash includes nano as the default text editor, but you can download a different one if you want.
+Bash includes `nano` as the default text editor, but you can download a different one if you want.
