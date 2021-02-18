@@ -20,3 +20,4 @@ amount of hands-on application of the concepts discussed.
 * [ ] [Data Types](./Data-Types.md)
 * [ ] [Operators](./Operators.md)
 * [ ] [Programming Paradigms](Programming-Paradigms.md)
+
