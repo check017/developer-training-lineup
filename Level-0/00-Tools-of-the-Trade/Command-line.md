@@ -3,7 +3,7 @@
 A long time ago there was no such thing as a mouse or a window or any other way to interact with a computer except a
 keyboard and a screen. Instructions were written with the keyboard, and
 output from those instructuions were viewed on the screen. That's it. There were no fancy buttons to click, no pictures,
-pretty windows. It was just text and a keyboard. A user interacted directly with the computers CPU to tell it what to do.
+pretty windows. It was just text and a keyboard. A user interacted directly with the computer's CPU to tell it what to do.
 While this seems very primitive and difficult, it turns out
 that some things are better done using this method as opposed to
 the Graphic User Interface. We will be using the Command Line for many of the tasks associated with your work.
@@ -43,7 +43,7 @@ connected to the computer in order to interact with it. There was little if any 
 It was just a communication portal to the computer. Later, terminals were developed with varying degrees of computing capabilities.
 However, they still relied on a main computer often located somewhere else than the location of the terminal.
 Several terminals would be connected to the same computer. This was standard practice until the advent of micro computers
-(That's the kind of computer you are looking at right now.) Fascinating history lesson , but so what, right? Well, the idea
+(That's the kind of computer you are looking at right now.) Fascinating history lesson, but so what, right? Well, the idea
 of a terminal is still with us. It is no longer a physical object, but we still use a thing called a terminal.
 These days the
 terminal is a program on your computer that mimics a real terminal.
@@ -106,7 +106,7 @@ But why did we need to go through two additional directories to get to the file 
 Ok, so while we call the file system a tree, it's actually clusters of directories inside other directories.
 Inside those directories are files. You could take the above file path and translate as "In the Home directory there lives
 the Project directory.
-Inside the Projects directory there lives the dev-training directory.
+Inside the Project directory there lives the dev-training directory.
 Inside this directory there lives the file my-addresses.txt. Let's go there please." Placing things inside other things is
 called "nesting". This idea is very prevalent in software development.
 The tree file structure is really a nested directory structure.
@@ -120,7 +120,7 @@ use an absolute file path you can go anywhere you want to go without having to w
 which directory you are currently in. You can only do this if you specify the entire file path starting from the root directory.
 Sometimes that can get pretty long. If you don't want to write out the whole path, you can use a relative file path. A
 relative file path is a path that is relative to the directory you are in.
-That means starting from the directory you are in then going forward from there. Using this file path
+That means starting from the directory you are in then going forward from there.
 
 ### Common Command Line Commands
 
@@ -148,18 +148,19 @@ This second double dash is used when you want to write out the whole argument. S
 could write "--version". Both of these arguments do the exact same thing.
 
 * `pwd`
-    - This command tells you which directory you are currently in. If you get lost this command helps you get unlost.
+    - This command tells you which directory you are currently in. If you get lost this command helps you get unlost. It stands
+    for "print working directory".
 
 * `cd`
-    - This command moves you around to
-    different directories. You can use either a relative file path or an absolute file path.
+    - This stands for "change directory" and is the command that moves you to another directory.
+    You can use either a relative file path or an absolute file path.
     If you use the absolute file path it doesn't matter what directory you are currently in. If you use a relative file path,
     you must designate the file path relative to the directory you are currently in. If you just type `cd` with no file path,
     you will be taken to your home directory
 
 * `ls`
     - This command lists the contents of the directory you are currently in. If you want to see the contents of a different
-    directory, type `ls` followed by the directories path.
+    directory, type `ls` followed by the directories path. "ls" stands for "list".
     `ls/home/username/Documents` will show you the contents of the Documents directory.
 
 * `cat`
@@ -298,7 +299,7 @@ could write "--version". Both of these arguments do the exact same thing.
 
 #### Terminal Editors
 
-Bash comes with a program for writing and editing files. It is called nano. You access it simply by typing `nano`.
+Bash comes with a program for writing and editing files. It is called "nano". You access it simply by typing `nano`.
 This will open the program and allow you to write whatever you want.
 You can also save your file by giving it a name and telling nano to save it. If you already know what you want to call your
 file you can also just type `nano file-name.txt` . This will create a file named "file-name" and open that file in nano.
