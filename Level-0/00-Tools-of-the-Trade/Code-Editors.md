@@ -42,7 +42,7 @@ could use a text editor to fix that letter to grandma or create a shopping list.
 for code. However, it just so happens that this is what they are normally used for. But you can pull out any text file
 in your text editor and modify it. It is really just a glorfied Notepad.
 
-Lets open up the text editor and see some of the basic functions:
+Let's open up the text editor and see some of the basic functions:
 
 * Go to the Sublime website. There you will find instructions on how to download Sublime on your machine. Our primary
   platform is Linux Ubuntu 20.04, so you will want to find the instructions for that Linux distribution.
@@ -63,7 +63,7 @@ Lets open up the text editor and see some of the basic functions:
 
 When you open a file that has a code file extension, like .js or .html, the computer and the text editor know that the
 file is a code file. Your text editor will automatically apply a feature of your code editor called "text highlighting".
-Text highlighting changes to color of different pieces of text in the editor depending on what that code represents. A
+Text highlighting changes the color of different pieces of text in the editor depending on what that code represents. A
 variable may be written in red while a string may be rendered in blue. This is a fast, handy way for you to see all the
 parts of your code at the same time. It also provides a clue for times when you might be writing your code wrong. You
 may expect to see a few words of your code turn red when you have declared a variable, but it doesn't. Looking more
@@ -80,12 +80,12 @@ A text editor allows you to edit any text. The file you are working with does no
 with text. A code editor is optimized for writing computer code. It has features specifically for writing just code. It can
 determine what coding language you are using,
 it provides text color to help you see what parts are what in your code, and it manages the files and
-directories of you project. It can also spot errors in your code right away. All of this speeds your development time.
+directories of your project. It can also spot errors in your code right away. All of this speeds your development time.
 Code editors do a lot more than what has been described here. They have a whole host of features.
 As you become more familiar with using a code editor you may find you like things set a certain way or that you prefer a
 certain feature more than another. A good code editor can handle any set-up you may prefer.
 
-## Intergrated Development Environment (IDE)
+## Integrated Development Environment (IDE)
 
 An IDE is a set of tools all grouped in one application used by the developer to handle every aspect of software
 development. Everything from file management to error handling to security is handled within an IDE. This is very
